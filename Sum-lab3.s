@@ -1,9 +1,9 @@
 .text
 @ Semplice funzione che calcola (r0+r1)^2 e salva il risultato in r0
 sum_square: add r2, r0, r1
-	    push {r2, lr}
+	    push {r2}
 	    mul r0, r2, r2
-	    pop {r2, lr}
+	    pop {r2}
 	    mov pc, lr
 	
 
