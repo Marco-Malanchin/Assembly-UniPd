@@ -20,7 +20,7 @@ main:	push {r0, r1, lr}@ salva contenuto registri
 	ldr r1, =n	@ carica indirizzo con la dimensione
 	ldr r1, [r1]	@ carica la lunghezza dell'array in r1
 	ldr r0, =V	@ indirizzo del vettore in r0
-	bl find_max	@ chiama la funzione per trovare il massimo	
+	bl find_max	@ chiama la funzione per trovare il massimo e salvo il valore del link register	
 	pop {r0, r1, lr}@ recupera valori iniziali dei registri
 	mov pc, lr	@ esci
 	
